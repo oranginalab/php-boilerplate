@@ -1,3 +1,26 @@
+Steps to setup a new php environment
+==================================
+
+ * Clone php-boilerplate repo at
+
+ * Customize container names at docker-compose.yml
+
+ * Customize database credentials at docker-compose.yml
+
+ * Run $> docker-compose up
+
+ * Run $> composer update
+
+ * Setup PHPStorm debugging. Change xdebug port to match that on php-overrides.ini (9005)
+
+ * Open http://localhost:8080 to see a greeting message
+
+ * Enable incoming requests debugging at PHPStorm, set a breakpoint in public/index.php, and reload http://localhost:8080 to check debug configuration for php-fpm requests. [DOESN’T WORK]
+
+ * Configure PHPStorm Test Framework (PHPUnit) to use remote interpreter using docker-compose based autoconfig.
+
+
+
 PHPDocker.io generated environment
 ==================================
 
